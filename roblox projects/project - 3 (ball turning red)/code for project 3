@@ -1,1 +1,39 @@
+local a = false
+local smallball = game.Workspace.smallball
+local function PARTOUCHED3(otherPart)
+	if a == false then
+		a = true
+		smallball.BrickColor = BrickColor.new("Bright red")
+		task.wait(3)
+		smallball.BrickColor = BrickColor.new("Medium stone grey")
+		a = false
+	end
+end
+
+smallball.Touched:connect(PARTOUCHED3)
+[[--This the code for a ball turning red and returning it back to the same color after 3 seconds
+In this code we are using events where the parameter - 'otherPart'(which is any part in the game) connects the small ball.
+we took the variable a and set to false and smallblock which is the reference to the ball in the game.
+We took the function 'PARTOUCHED3' with the parameter otherPart to fire this event.
+This peice of code - 	'if a == false then
+		a = true
+		smallball.BrickColor = BrickColor.new("Bright red")
+		task.wait(3)
+		smallball.BrickColor = BrickColor.new("Medium stone grey")
+		a = false
+	end
+end',
+states that when a == false,
+1.it sets a to true
+2.sets the ball to red for 3 seconds
+3.returns it back to its original color
+4.and sets a back to false again
+The purpose for this code is to create a debounce where the ball will only turn red and return back to its original color if - 'if a == false then..' is fired.
+And in order to fire - 'if a == false...' , the player has to touch the ball.
+So ultimately it creates a debounce effect.
+And the - 'smallball.Touched:connect(PARTOUCHED3) is the event that conencts to the function PARTOUCHED3 and operates with the parameter - 'otherPart'
+Thats all
+Thank you
+
+
 
