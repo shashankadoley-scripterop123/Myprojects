@@ -7,7 +7,7 @@ print(f'Hi your {distance_in_km}km is equivalent to {round(miles , 2)}miles.')
 """The following code is about converting the entered distance into miles.
 The variable - 'distance_input', asks for a number that will be converted into distance kilometers through the variable -  'distance_in_km'.
 The variable 'miles' converts kilometers into miles by the formula - Entered distance in kilometers/1.609.
-The print statement uses - f strings.
+The print statement uses - f strings, where the final output is rounded of to two decimal places.
 Thank you that's all!"""
 
 
