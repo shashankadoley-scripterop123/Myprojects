@@ -1,5 +1,5 @@
-#This is a code for finding the worst profit, best profit and the combined profit(worst profit + best profit)made by selling lemonades
-# 1 lemonade = 1.5$
+"""This is a code for finding the worst profit, best profit and the combined profit(worst profit + best profit)made by selling lemonades
+ 1 lemonade = 1.5$"""
 
 
 sales_of_week1 = [7,3,42,19,15,35,9]      
