@@ -1,0 +1,26 @@
+#This is a code for finding the worst profit, best profit and the combined profit(worst profit + best profit)made by selling lemonades
+# 1 lemonade = 1.5$
+
+
+sales_of_week1 = [7,3,42,19,15,35,9]      
+sales_of_week2 = [12,4,26,10,7,28]
+sales = []
+#The two variables store how much lemonade was sold in each day
+#The sales variable is meant for how much lemonade was sold in each day over a span of two weeks, so it will take both the above list.
+
+new_day = int(input('Enter how many lemonade sold'))
+#This variable refers to the missing day in week 2 , where the user has the control over the last and can enter any number of lemonade sold. 
+
+sales_w2.append(new_day)
+sales = sales_of_week1 + sales_of_week2
+profit_in_best_day = max(sales) * 1.5
+print(f'Maximum earned on best day: {profit_in_best_day}$')
+profit_in_worst_day = min(sales) * 1.5 
+print(f'least earned on worst day: {profit_in_worst_day}$')
+#The above variable stores the profit made in best day(where the user has sold maximum lemonades)
+#and profit made in worst day(where the user has sold minimum lemonades)
+# And at last prints the value
+
+combined_profit = profit_in_best_day + profit_in_worst_day 
+print(f'combined profit: {combined_profit}$')
+#This peice of code stores and prints the combined day profit(worst day profit + best day profit)
