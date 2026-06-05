@@ -5,13 +5,17 @@
 sales_of_week1 = [7,3,42,19,15,35,9]      
 sales_of_week2 = [12,4,26,10,7,28]
 sales = []
+print(sales_of_week1,'are the number of lemonades sold in week1')
+print(sales_of_week2,'are the number of lemonades sold in week2')
+print('1 lemonade = 1.5$')
+
 #The two variables store how much lemonade was sold in each day
 #The sales variable is meant for how much lemonade was sold in each day over a span of two weeks, so it will take both the above list.
 
-new_day = int(input('Enter how many lemonades sold'))
+new_day = int(input('Enter how many lemonades sold in last day of week2'))
 #This variable refers to the missing day in week 2 , where the user has the control over the last and can enter any number of lemonade sold. 
 
-sales_of-_week2.append(new_day)
+sales_of_week2.append(new_day)
 sales = sales_of_week1 + sales_of_week2
 profit_in_best_day = max(sales) * 1.5
 print(f'Profit on best day: {profit_in_best_day}$')
@@ -23,4 +27,4 @@ print(f'Profit on worst day: {profit_in_worst_day}$')
 
 combined_profit = profit_in_best_day + profit_in_worst_day 
 print(f'combined profit: {combined_profit}$')
-#This peice of code stores and prints the combined day profit(worst day profit + best day profit)
+#This peice of code stores and prints the combined day profit(worst day profit
