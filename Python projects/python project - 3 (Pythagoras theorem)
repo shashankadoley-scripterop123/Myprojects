@@ -1,0 +1,29 @@
+from math import sqrt 
+user = (input("Enter which side you want to measure from sides hypotenous,base and height"))
+if user == "height":
+        length_hypotenous = float(input("Enter the lenghth of hypotenous"))
+        length_base  = float(input("Enter the length of base"))
+        length_height = sqrt(length_hypotenous**2 - length_base**2)
+        print("length of height is",length_height)
+
+if user == "base":
+        length_hypotenous = float(input("Enter the lenghth of hypotenous"))
+        length_height = float(input("Enter the length of side 2"))
+        length_base = sqrt(length_hypotenous**2 - length_height**2)
+        print("length of base is",length_base)
+if user == "hypotenous":
+        length_base = float(input("Enter the lenghth of base"))
+        length_height = float(input("Enter the length of height"))
+        length_hypotenous = sqrt(length_base**2 + length_height**2)
+        print("length of hypotenous is",length_hypotenous)
+
+#The following pythagoras simulator is made up from the above code.It is used to find the sides of the right angled triangle
+
+#The code is kinda complex and hence basic understanding of pythagoras theorem is required.
+
+#The line - "from math import sqrt", means that from the library math import the function sqrt. normaly sqrt or square root function won't work if u haven't typed
+#this command
+
+#The basic logic of the code is that if the user wants to measure height base or hypotenous, the user has to type from the sides hypotenous , base and height.
+#Eg: if the user enters height, program will measure the height of the triangle by making the user enter the values of hypotenous and base.
+#This has been expressed through the code - if user == "height":, and the program does it all
