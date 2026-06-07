@@ -1,4 +1,4 @@
-from math import sqrt 
+code:from math import sqrt 
 user = (input("Enter which side you want to measure from sides hypotenous,base and height"))
 if user == "height":
         length_hypotenous = float(input("Enter the lenghth of hypotenous"))
