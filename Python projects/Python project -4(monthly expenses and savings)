@@ -1,0 +1,34 @@
+print('Make a program where you can track your monthly expenses,calculate how much money can be saved to buy a new item')
+income = float(input('Enter how much you earn'))
+item = float(input('How much does the gadget cost'))
+grocerry_input = float(input('Enter how much do you spend on grocerry'))
+electricity = float(input('Enter how much do you spend on electricity'))
+shopping = float(input('Enter how much do you spend on shopping'))
+#Asks the user to enter how much money do they spend in these things
+user_rent = input('Do you pay rent?,YES or NO')
+#Asks the user if they pay rent
+if user_rent == 'YES':
+   rent = float(input('How much do you spend on rent'))
+   expenditure = grocerry_input + electricity + shopping + rent
+   #if they do, money spend on rent is also added to the total expenditure
+   savings = income - expenditure
+   #Calculates how much money can be saved
+   print(f'{savings} can be saved')
+   
+if user_rent == 'NO':
+    expenditure = grocerry_input + electricity + shopping
+    #If the user dosen't, the total expeenditure is calculated without rent
+    savings = income - expenditure
+    print(f'{savings} can be saved')
+
+if savings < item:
+    Months_required_to_buy_the_new_item = int(item / savings)
+    #Calculates months required to by the new item, if the cost of the item is more than savings
+    print('You can buy your item in',Months_required_to_buy_the_new_item,'months')
+else:
+    print('You can buy your item now')
+    #If the savings is more, you can buy your item now
+
+    
+
+
