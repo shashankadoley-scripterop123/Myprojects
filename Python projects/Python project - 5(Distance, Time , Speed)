@@ -1,0 +1,72 @@
+
+
+input_user = input('Which one of the following do you want to measure. Distance, Time, Speed')
+#Asks the user what they want to measure
+if input_user == 'Distance':
+    #if the user enters distance, the following code runs
+    input_user2 = input('In which unit do you want to measure?, km or m')
+    #aks if the user wants to measure in km or m
+    if input_user2 == 'km':
+        #if km the following code runs
+        Speed_km = float(input('Enter your speed'))
+        Time_hr = float(input('Enter time taken'))
+        Distance_km = float(Speed_km * Time_hr)
+        print('Your distancee in kilometre is',Distance_km)
+    elif input_user2 == 'm':
+        #if m the following code runs
+        Speed_m = float(input('Enter your speed '))
+        Time_s = float(input('Enter the time taken'))
+        Distance_m = Speed_m *  Time_s
+        print('Distance in meters is',Distance_m)
+        
+    else:
+        #shows an error if not correct values
+        print('Error, enter the correct values')
+
+elif input_user == 'Time':
+    #if time the following runs
+    input_user2 = input('Enter in which unit you want to measure, seconds or hour')
+    if input_user2 == 'seconds':
+        #if seconds, the following runs
+                        Distance_m = float(input('Enter the distance travelled in meters'))
+                        Speed_m = float(input('Enter your speed in m'))
+                        Time_s = Distance_m / Speed_m
+                        print('Your time in seconds is',Time_s)
+    elif input_user2 == 'hour':
+        #if hour, the following runs
+        Distance_km = float(input('Enter distance travelled in km'))
+        Speed_km = float(input('Enter your speed in km'))
+        Time_hr = Distance_km / Speed_km
+        print('Your time in hour is',Time_hr)
+
+
+    else:
+        print('Error, enter correct values')
+elif input_user == 'Speed':
+    #if speed the follwing runs
+    input_user2 = input('Enter in which unit you want to measure, km/h or m/s')
+    if input_user2 == 'km/h':
+        #if km/h the following runs
+        Distance_km = float(input('Enter distance in km'))
+        Time_hr = float(input('Enter time in hours'))
+        Speed_km = Distance_km / Time_hr
+        print('Your speed in km is',Speed_km)
+    elif input_user2 == 'm/s':
+        #if m/s, the following runs
+        Distance_m = float(input('Enter distance in meters'))
+        Time_s = float(input('Enter time in seconds'))
+        Speed_m = Distance_m / Time_s
+        print('Your speed in m/s is',Speed_m)
+else:
+    #An error for not entering correct values
+    print('Error, Enter correct values')
+                       
+                         
+                         
+                        
+     
+     
+                          
+     
+
+
