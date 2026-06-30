@@ -1,0 +1,53 @@
+print('This is a program for the user to guess the lucky number from range of 1 to 100')
+from random import randint
+
+
+
+lucky_number = randint(1, 100)
+# module randint is used which picks up a random number from a range given by the user
+
+if lucky_number > 50 and lucky_number % 2 == 0:
+    print('The number is greater than 50 and is an even number')
+    # prints if the number is greater than 50 and is an even number
+elif lucky_number > 50 and lucky_number % 2 == 1:
+    print('The number is greater than 50 and is an odd number')
+    #prints if the number is greater than 50 and is an odd number
+elif lucky_number < 50 and lucky_number % 2 == 0:
+    print('The number is less than 50 and is an even number')
+    #prints if the number is less than 50 and is an even number
+else:
+    print('The number is less than 50 and is an odd number')
+    #prints if the number is less than 50 and is an odd number
+ 
+   
+print('Guess the number')
+print('You will be given three chances')
+
+
+
+i = 0
+while i < 3:
+#While loop is used to give the user 3 chances
+    
+
+    user_input = int(input('Enter the random number'))
+
+
+
+    if user_input == lucky_number:
+         print('You won')
+         break
+        #Breaks the loop if the user guesses the correct number
+       
+         
+
+    else:
+        print('Wrong')
+    i = i + 1
+    if i > 3:
+        break
+    #Breaks the loop if the user used all of its chances
+    
+print('The lucky number is',lucky_number)
+#Prints the lucky number
+
